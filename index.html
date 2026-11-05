@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cabañas Cara Carü · Descanso, piscina y tinajas en La Ligua</title>
+  <meta name="description" content="Cabañas Cara Carü en La Ligua: cabañas acogedoras rodeadas de naturaleza, piscina, tinajas calientes, quincho y amplias áreas verdes. Reserva directo por WhatsApp." />
+  <meta property="og:title" content="Cabañas Cara Carü · La Ligua" />
+  <meta property="og:description" content="Cabañas, piscina, tinajas calientes y naturaleza. Tu refugio para desconectarte." />
+  <meta property="og:image" content="img/piscina-dia.jpg" />
+  <meta name="theme-color" content="#1f3a2e" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f3a2e'/%3E%3Cpath d='M12 40 32 18l20 22' fill='none' stroke='%23e8c79a' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M24 46h16' stroke='%2349c1b5' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#inicio" class="logo" aria-label="Cabañas Cara Carü, inicio">
+        <svg class="logo__mark" viewBox="0 0 64 64" aria-hidden="true">
+          <path d="M10 40 32 16l22 24" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M23 47h18" stroke="#49c1b5" stroke-width="5" stroke-linecap="round"/>
+        </svg>
+        <span class="logo__text">Cara Carü<small>Cabañas</small></span>
+      </a>
+      <nav class="nav__links" id="navLinks" aria-label="Principal">
+        <a href="#nosotros">Nosotros</a>
+        <a href="#cabanas">Cabañas</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#galeria">Galería</a>
+        <a href="#ubicacion">Ubicación</a>
+        <a href="#reservar" class="btn btn--sm btn--accent">Reservar</a>
+      </nav>
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="inicio">
+    <div class="hero__slides" aria-hidden="true">
+      <div class="hero__slide is-active" style="background-image:url('img/piscina-dia.jpg')"></div>
+      <div class="hero__slide" style="background-image:url('img/terraza-noche.jpg')"></div>
+      <div class="hero__slide" style="background-image:url('img/jardin-tinaja.jpg')"></div>
+    </div>
+    <div class="hero__overlay"></div>
+    <div class="container hero__content">
+      <p class="eyebrow eyebrow--light">La Ligua · Región de Valparaíso</p>
+      <h1>Tu refugio verde para <em>desconectarte</em></h1>
+      <p class="hero__lead">Cabañas acogedoras, piscina, tinajas calientes y jardines llenos de vida. Un lugar pensado para descansar en familia, en pareja o con amigos.</p>
+      <div class="hero__actions">
+        <a href="#reservar" class="btn btn--accent">Consultar disponibilidad</a>
+        <a href="#galeria" class="btn btn--ghost">Ver fotos</a>
+      </div>
+    </div>
+    <div class="hero__dots" id="heroDots" role="tablist" aria-label="Fotos destacadas"></div>
+  </section>
+
+  <!-- ============ HIGHLIGHTS ============ -->
+  <section class="highlights">
+    <div class="container highlights__grid">
+      <div class="highlight">
+        <span class="highlight__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M2 18c2 0 2-1.5 4-1.5S8 18 10 18s2-1.5 4-1.5 2 1.5 4 1.5 2-1.5 4-1.5M2 22c2 0 2-1.5 4-1.5S8 22 10 22s2-1.5 4-1.5 2 1.5 4 1.5 2-1.5 4-1.5M7 14V5a2 2 0 0 1 4 0M13 14V5a2 2 0 0 1 4 0M7 9h6"/></svg>
+        </span>
+        <div><strong>Piscina</strong><span>Rodeada de pasto y sombra</span></div>
+      </div>
+      <div class="highlight">
+        <span class="highlight__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M4 11h16v6a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4zM4 15h16M8 7c0-1.5 1-1.5 1-3M12 7c0-1.5 1-1.5 1-3M16 7c0-1.5 1-1.5 1-3"/></svg>
+        </span>
+        <div><strong>Tinajas calientes</strong><span>Relajo bajo las estrellas</span></div>
+      </div>
+      <div class="highlight">
+        <span class="highlight__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M3 10 12 3l9 7M5 9v11h14V9M10 20v-6h4v6"/></svg>
+        </span>
+        <div><strong>Cabañas equipadas</strong><span>Cómodas y acogedoras</span></div>
+      </div>
+      <div class="highlight">
+        <span class="highlight__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 22V12M12 12c0-4 3-7 8-8-1 5-4 8-8 8zM12 15c0-3-2.5-5.5-7-6 .5 4 3 6 7 6z"/></svg>
+        </span>
+        <div><strong>Naturaleza</strong><span>Amplios jardines y quinchos</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ NOSOTROS ============ -->
+  <section class="section about" id="nosotros">
+    <div class="container about__grid">
+      <div class="about__media reveal">
+        <img src="img/jardin-entrada.jpg" alt="Jardín de entrada con flores y arbustos en Cabañas Cara Carü" class="about__img about__img--main" loading="lazy" />
+        <img src="img/tinaja-madera.jpg" alt="Tinaja de madera rodeada de vegetación" class="about__img about__img--small" loading="lazy" />
+        <div class="about__badge">
+          <strong>100%</strong>
+          <span>rodeado de<br/>naturaleza</span>
+        </div>
+      </div>
+      <div class="about__text reveal">
+        <p class="eyebrow">Bienvenidos a Cara Carü</p>
+        <h2>Un rincón tranquilo, hecho con cariño</h2>
+        <p>En Cabañas Cara Carü creemos que el verdadero descanso está en lo simple: despertar con el canto de los pájaros, pasar la tarde junto a la piscina y terminar el día en una tinaja caliente bajo el cielo del valle.</p>
+        <p>Cada rincón de nuestro terreno ha sido cuidado a mano: jardines con flores, senderos, quinchos de madera y espacios para compartir. Aquí el tiempo corre más lento.</p>
+        <ul class="checklist">
+          <li>Ambiente familiar y tranquilo</li>
+          <li>Ideal para parejas, familias y grupos</li>
+          <li>Atención personalizada de sus dueños</li>
+          <li>Estacionamiento dentro del recinto</li>
+        </ul>
+        <a href="#reservar" class="btn btn--primary">Quiero reservar</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CABAÑAS ============ -->
+  <section class="section section--tint cabins" id="cabanas">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="eyebrow">Alojamiento</p>
+        <h2>Nuestras cabañas</h2>
+        <p>Espacios cálidos revestidos en madera, con ropa de cama de calidad y todo lo necesario para que solo te preocupes de descansar.</p>
+      </div>
+
+      <div class="cabin reveal">
+        <div class="cabin__media">
+          <img src="img/cabana-dormitorio.jpg" alt="Dormitorio de cabaña con cama matrimonial y sofá turquesa" loading="lazy" />
+        </div>
+        <div class="cabin__body">
+          <h3>Cabaña</h3>
+          <p>Dormitorio con cama matrimonial, sillón, muros de madera natural y un ambiente acogedor. Todo preparado para tu descanso.</p>
+          <ul class="amenities">
+            <li><svg viewBox="0 0 24 24"><path d="M3 18v-6a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v6M3 14h18M3 18v2M21 18v2M7 9V6h10v3"/></svg>Cama matrimonial</li>
+            <li><svg viewBox="0 0 24 24"><path d="M4 18v-5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5M4 15h16M6 11V8a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v3M5 18v2M19 18v2"/></svg>Sofá</li>
+            <li><svg viewBox="0 0 24 24"><path d="M4 4h16v16H4zM4 9h16M9 20V9"/></svg>Ropa de cama y toallas</li>
+            <li><svg viewBox="0 0 24 24"><path d="M3 12h18M5 12V7a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v5M6 12v7M18 12v7"/></svg>Acceso a quincho</li>
+            <li><svg viewBox="0 0 24 24"><path d="M2 18c2 0 2-1.5 4-1.5S8 18 10 18s2-1.5 4-1.5 2 1.5 4 1.5 2-1.5 4-1.5M7 14V5a2 2 0 0 1 4 0M13 14V5a2 2 0 0 1 4 0"/></svg>Acceso a piscina</li>
+            <li><svg viewBox="0 0 24 24"><path d="M5 17h14M6 17l1-6h10l1 6M8 11V8a4 4 0 0 1 8 0v3"/></svg>Estacionamiento</li>
+          </ul>
+          <div class="cabin__foot">
+            <span class="cabin__price">Consulta tarifas y disponibilidad</span>
+            <a href="#reservar" class="btn btn--primary">Reservar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICIOS ============ -->
+  <section class="section services" id="servicios">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="eyebrow">Experiencias</p>
+        <h2>Todo lo que te espera</h2>
+        <p>Espacios para disfrutar de día y de noche, en un entorno lleno de verde.</p>
+      </div>
+
+      <div class="services__grid">
+        <article class="service reveal">
+          <div class="service__img"><img src="img/piscina-dia.jpg" alt="Piscina rodeada de pasto con pérgola de madera" loading="lazy" /></div>
+          <div class="service__body">
+            <h3>Piscina</h3>
+            <p>Refréscate en nuestra piscina rodeada de pasto, reposeras de madera y sombra. Ideal para los días de calor del valle.</p>
+          </div>
+        </article>
+        <article class="service reveal">
+          <div class="service__img"><img src="img/jardin-tinaja.jpg" alt="Sector de tinajas calientes con terraza turquesa" loading="lazy" /></div>
+          <div class="service__body">
+            <h3>Tinajas calientes</h3>
+            <p>Tinajas de madera con agua caliente para relajarte en pareja o en grupo, perfectas para terminar el día.</p>
+          </div>
+        </article>
+        <article class="service reveal">
+          <div class="service__img"><img src="img/pergola-tinajas.jpg" alt="Pérgola techada del sector tinajas con mesas y sillones" loading="lazy" /></div>
+          <div class="service__body">
+            <h3>Pérgola sector tinajas</h3>
+            <p>Un espacio techado con mesas y sillones para compartir una once, un asado o una buena conversación.</p>
+          </div>
+        </article>
+        <article class="service reveal">
+          <div class="service__img"><img src="img/terraza-noche.jpg" alt="Terraza de madera iluminada con guirnaldas de luces de noche" loading="lazy" /></div>
+          <div class="service__body">
+            <h3>Terraza de noche</h3>
+            <p>Reposeras bajo guirnaldas de luces cálidas: el lugar favorito para mirar las estrellas.</p>
+          </div>
+        </article>
+        <article class="service reveal">
+          <div class="service__img"><img src="img/piscina-noche.jpg" alt="Piscina iluminada de noche con hidromasaje" loading="lazy" /></div>
+          <div class="service__body">
+            <h3>Piscina iluminada</h3>
+            <p>Con iluminación nocturna y chorros de agua para disfrutarla también cuando cae el sol.</p>
+          </div>
+        </article>
+        <article class="service reveal">
+          <div class="service__img"><img src="img/jardin-entrada.jpg" alt="Jardines con flores rojas y arbustos" loading="lazy" /></div>
+          <div class="service__body">
+            <h3>Jardines y juegos</h3>
+            <p>Amplias áreas verdes, juegos infantiles y rincones para que los niños disfruten al aire libre.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ QUOTE BANNER ============ -->
+  <section class="banner">
+    <div class="banner__bg" style="background-image:url('img/terraza-noche.jpg')"></div>
+    <div class="container banner__content reveal">
+      <p class="banner__quote">“Hay lugares a los que uno va de vacaciones,<br/>y otros a los que uno vuelve a <em>descansar</em>.”</p>
+      <a href="#reservar" class="btn btn--accent">Reserva tu estadía</a>
+    </div>
+  </section>
+
+  <!-- ============ GALERÍA ============ -->
+  <section class="section gallery" id="galeria">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="eyebrow">Galería</p>
+        <h2>Conoce Cara Carü</h2>
+        <p>Haz clic en cualquier foto para verla en grande.</p>
+      </div>
+      <div class="gallery__grid" id="gallery">
+        <figure class="g g--big"><img src="img/piscina-dia.jpg" alt="Piscina de día" loading="lazy" /><figcaption>Piscina</figcaption></figure>
+        <figure class="g g--tall"><img src="img/jardin-entrada.jpg" alt="Jardín de entrada" loading="lazy" /><figcaption>Jardín de entrada</figcaption></figure>
+        <figure class="g"><img src="img/cabana-dormitorio.jpg" alt="Dormitorio de cabaña" loading="lazy" /><figcaption>Dormitorio</figcaption></figure>
+        <figure class="g"><img src="img/terraza-noche.jpg" alt="Terraza iluminada de noche" loading="lazy" /><figcaption>Terraza de noche</figcaption></figure>
+        <figure class="g g--tall"><img src="img/tinaja-madera.jpg" alt="Tinaja de madera" loading="lazy" /><figcaption>Tinaja de madera</figcaption></figure>
+        <figure class="g g--wide"><img src="img/jardin-tinaja.jpg" alt="Sector tinajas y jardín" loading="lazy" /><figcaption>Sector tinajas</figcaption></figure>
+        <figure class="g g--tall"><img src="img/piscina-noche.jpg" alt="Piscina iluminada de noche" loading="lazy" /><figcaption>Piscina de noche</figcaption></figure>
+        <figure class="g g--wide"><img src="img/pergola-tinajas.jpg" alt="Pérgola sector tinajas" loading="lazy" /><figcaption>Pérgola sector tinajas</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ UBICACIÓN ============ -->
+  <section class="section section--tint location" id="ubicacion">
+    <div class="container location__grid">
+      <div class="location__text reveal">
+        <p class="eyebrow">Ubicación</p>
+        <h2>En el corazón del valle de La Ligua</h2>
+        <p>Estamos ubicados en Valle Hermoso, comuna de La Ligua, Región de Valparaíso. Un entorno tranquilo rodeado de cerros y naturaleza, a pocos minutos de la artesanía textil y los tradicionales dulces de La Ligua, y con rápido acceso a la costa.</p>
+        <ul class="info-list">
+          <li>
+            <svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            <span>Cara Carü · Valle Hermoso, La Ligua, Región de Valparaíso</span>
+          </li>
+        </ul>
+        <a href="https://share.google/mQAPI1QGxUbLQCbyu" target="_blank" rel="noopener" class="btn btn--primary">Ver ubicación en Google Maps</a>
+      </div>
+      <div class="location__map reveal">
+        <iframe title="Ubicación Cabañas Cara Carü en Google Maps" src="https://www.google.com/maps?q=CARA+CAR%C3%9C,+Valle+Hermoso,+La+Ligua&z=14&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ RESERVAR ============ -->
+  <section class="section booking" id="reservar">
+    <div class="container booking__grid">
+      <div class="booking__intro reveal">
+        <p class="eyebrow eyebrow--light">Reservas</p>
+        <h2>¿Listo para tu escapada?</h2>
+        <p>Cuéntanos tus fechas y te respondemos a la brevedad por WhatsApp con disponibilidad y tarifas.</p>
+        <div class="contact-cards">
+          <a class="contact-card" id="waDirect" href="#" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24"><path d="M20.5 3.5A11 11 0 0 0 3.2 17.3L2 22l4.8-1.2A11 11 0 0 0 20.5 3.5zM12 20a8.9 8.9 0 0 1-4.6-1.3l-.3-.2-2.9.8.8-2.8-.2-.3A9 9 0 1 1 12 20zm4.9-6.7c-.3-.1-1.6-.8-1.8-.9-.3-.1-.4-.1-.6.1l-.8 1c-.2.2-.3.2-.6.1a7.4 7.4 0 0 1-3.6-3.2c-.3-.5.3-.4.8-1.4.1-.2 0-.3 0-.5l-.8-2c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.5-.3z"/></svg>
+            <div><strong>WhatsApp</strong><span id="waLabel">+56 9 0000 0000</span></div>
+          </a>
+          <a class="contact-card" href="https://www.instagram.com/cara_caru/?hl=es" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+            <div><strong>Instagram</strong><span>@cara_caru</span></div>
+          </a>
+        </div>
+      </div>
+
+      <form class="booking__form reveal" id="bookingForm" novalidate>
+        <h3>Solicitar reserva</h3>
+        <div class="field">
+          <label for="nombre">Nombre</label>
+          <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" required />
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="llegada">Llegada</label>
+            <input id="llegada" name="llegada" type="date" required />
+          </div>
+          <div class="field">
+            <label for="salida">Salida</label>
+            <input id="salida" name="salida" type="date" required />
+          </div>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="adultos">Adultos</label>
+            <select id="adultos" name="adultos">
+              <option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6+</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="ninos">Niños</label>
+            <select id="ninos" name="ninos">
+              <option selected>0</option><option>1</option><option>2</option><option>3</option><option>4+</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label for="mensaje">Mensaje (opcional)</label>
+          <textarea id="mensaje" name="mensaje" rows="3" placeholder="¿Quieres reservar tinaja? ¿Alguna consulta?"></textarea>
+        </div>
+        <p class="form-error" id="formError" role="alert"></p>
+        <button type="submit" class="btn btn--accent btn--block">Enviar por WhatsApp</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#inicio" class="logo logo--light">
+        <svg class="logo__mark" viewBox="0 0 64 64" aria-hidden="true">
+          <path d="M10 40 32 16l22 24" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M23 47h18" stroke="#49c1b5" stroke-width="5" stroke-linecap="round"/>
+        </svg>
+        <span class="logo__text">Cara Carü<small>Cabañas</small></span>
+      </a>
+      <nav class="footer__links" aria-label="Pie de página">
+        <a href="#nosotros">Nosotros</a>
+        <a href="#cabanas">Cabañas</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#galeria">Galería</a>
+        <a href="#reservar">Reservar</a>
+        <a href="https://www.instagram.com/cara_caru/?hl=es" target="_blank" rel="noopener">Instagram</a>
+      </nav>
+      <p class="footer__copy">© <span id="year"></span> Cabañas Cara Carü · La Ligua, Chile</p>
+    </div>
+  </footer>
+
+  <!-- WhatsApp flotante -->
+  <a class="wa-float" id="waFloat" href="#" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M20.5 3.5A11 11 0 0 0 3.2 17.3L2 22l4.8-1.2A11 11 0 0 0 20.5 3.5zM12 20a8.9 8.9 0 0 1-4.6-1.3l-.3-.2-2.9.8.8-2.8-.2-.3A9 9 0 1 1 12 20zm4.9-6.7c-.3-.1-1.6-.8-1.8-.9-.3-.1-.4-.1-.6.1l-.8 1c-.2.2-.3.2-.6.1a7.4 7.4 0 0 1-3.6-3.2c-.3-.5.3-.4.8-1.4.1-.2 0-.3 0-.5l-.8-2c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.5-.3z"/></svg>
+  </a>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Foto ampliada" hidden>
+    <button class="lightbox__close" id="lbClose" aria-label="Cerrar">&times;</button>
+    <button class="lightbox__nav lightbox__nav--prev" id="lbPrev" aria-label="Anterior">&#8249;</button>
+    <figure>
+      <img id="lbImg" src="" alt="" />
+      <figcaption id="lbCap"></figcaption>
+    </figure>
+    <button class="lightbox__nav lightbox__nav--next" id="lbNext" aria-label="Siguiente">&#8250;</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

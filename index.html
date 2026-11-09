@@ -10,7 +10,7 @@
   <meta property="og:image" content="img/piscina-dia.jpg" />
   <meta name="theme-color" content="#1f3a2e" />
   <meta name="color-scheme" content="light" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f3a2e'/%3E%3Cpath d='M12 40 32 18l20 22' fill='none' stroke='%23e8c79a' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M24 46h16' stroke='%2349c1b5' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E" />
+  <link rel="icon" type="image/png" href="img/logo.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
@@ -22,11 +22,8 @@
   <header class="nav" id="nav">
     <div class="container nav__inner">
       <a href="#inicio" class="logo" aria-label="Cabañas Cara Carü, inicio">
-        <svg class="logo__mark" viewBox="0 0 64 64" aria-hidden="true">
-          <path d="M10 40 32 16l22 24" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M23 47h18" stroke="#49c1b5" stroke-width="5" stroke-linecap="round"/>
-        </svg>
-        <span class="logo__text">Cara Carü<small>Cabañas</small></span>
+        <img src="img/logo.png" alt="Logo Cara Carü" class="logo__img" />
+        <span class="logo__text">Cara Carü<small>Espacio de Relajación</small></span>
       </a>
       <nav class="nav__links" id="navLinks" aria-label="Principal">
         <a href="#nosotros">Nosotros</a>
@@ -47,7 +44,7 @@
     <div class="hero__slides" aria-hidden="true">
       <div class="hero__slide is-active" style="background-image:url('img/piscina-dia.jpg')"></div>
       <div class="hero__slide" style="background-image:url('img/terraza-noche.jpg')"></div>
-      <div class="hero__slide" style="background-image:url('img/jardin-tinaja.jpg')"></div>
+      <div class="hero__slide" style="background-image:url('img/tinaja-madera.jpg')"></div>
     </div>
     <div class="hero__overlay"></div>
     <div class="container hero__content">
@@ -170,10 +167,17 @@
           </div>
         </article>
         <article class="service reveal">
-          <div class="service__img"><img src="img/jardin-tinaja.jpg" alt="Sector de tinajas calientes con terraza turquesa" loading="lazy" /></div>
+          <div class="service__img"><img src="img/tinaja-madera.jpg" alt="Tinajas calientes de madera" loading="lazy" /></div>
           <div class="service__body">
             <h3>Tinajas calientes</h3>
             <p>Tinajas de madera con agua caliente para relajarte en pareja o en grupo, perfectas para terminar el día.</p>
+          </div>
+        </article>
+        <article class="service reveal">
+          <div class="service__img"><img src="img/spa-ninas.jpg" alt="Spa para niñas en Cabañas Cara Carü" loading="lazy" /></div>
+          <div class="service__body">
+            <h3>Spa para niñas</h3>
+            <p>Una experiencia mágica y relajante de bienestar y autocuidado pensada especialmente para las más pequeñas en un entorno natural.</p>
           </div>
         </article>
         <article class="service reveal">
@@ -195,13 +199,6 @@
           <div class="service__body">
             <h3>Piscina iluminada</h3>
             <p>Con iluminación nocturna y chorros de agua para disfrutarla también cuando cae el sol.</p>
-          </div>
-        </article>
-        <article class="service reveal">
-          <div class="service__img"><img src="img/jardin-entrada.jpg" alt="Jardines con flores rojas y arbustos" loading="lazy" /></div>
-          <div class="service__body">
-            <h3>Jardines y juegos</h3>
-            <p>Amplias áreas verdes, juegos infantiles y rincones para que los niños disfruten al aire libre.</p>
           </div>
         </article>
       </div>
@@ -230,8 +227,8 @@
         <figure class="g g--tall"><img src="img/jardin-entrada.jpg" alt="Jardín de entrada" loading="lazy" /><figcaption>Jardín de entrada</figcaption></figure>
         <figure class="g"><img src="img/cabana-dormitorio.jpg" alt="Dormitorio de cabaña" loading="lazy" /><figcaption>Dormitorio</figcaption></figure>
         <figure class="g"><img src="img/terraza-noche.jpg" alt="Terraza iluminada de noche" loading="lazy" /><figcaption>Terraza de noche</figcaption></figure>
-        <figure class="g g--tall"><img src="img/tinaja-madera.jpg" alt="Tinaja de madera" loading="lazy" /><figcaption>Tinaja de madera</figcaption></figure>
-        <figure class="g g--wide"><img src="img/jardin-tinaja.jpg" alt="Sector tinajas y jardín" loading="lazy" /><figcaption>Sector tinajas</figcaption></figure>
+        <figure class="g g--tall"><img src="img/tinaja-madera.jpg" alt="Tinajas calientes" loading="lazy" /><figcaption>Tinajas calientes</figcaption></figure>
+        <figure class="g g--wide"><img src="img/spa-ninas.jpg" alt="Spa para niñas" loading="lazy" /><figcaption>Spa para niñas</figcaption></figure>
         <figure class="g g--tall"><img src="img/piscina-noche.jpg" alt="Piscina iluminada de noche" loading="lazy" /><figcaption>Piscina de noche</figcaption></figure>
         <figure class="g g--wide"><img src="img/pergola-tinajas.jpg" alt="Pérgola sector tinajas" loading="lazy" /><figcaption>Pérgola sector tinajas</figcaption></figure>
       </div>
@@ -310,7 +307,7 @@
         </div>
         <div class="field">
           <label for="mensaje">Mensaje (opcional)</label>
-          <textarea id="mensaje" name="mensaje" rows="3" placeholder="¿Quieres reservar tinaja? ¿Alguna consulta?"></textarea>
+          <textarea id="mensaje" name="mensaje" rows="3" placeholder="¿Quieres reservar tinaja o spa para niñas? ¿Alguna consulta?"></textarea>
         </div>
         <p class="form-error" id="formError" role="alert"></p>
         <button type="submit" class="btn btn--accent btn--block">Enviar por WhatsApp</button>
@@ -322,11 +319,8 @@
   <footer class="footer">
     <div class="container footer__inner">
       <a href="#inicio" class="logo logo--light">
-        <svg class="logo__mark" viewBox="0 0 64 64" aria-hidden="true">
-          <path d="M10 40 32 16l22 24" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M23 47h18" stroke="#49c1b5" stroke-width="5" stroke-linecap="round"/>
-        </svg>
-        <span class="logo__text">Cara Carü<small>Cabañas</small></span>
+        <img src="img/logo.png" alt="Logo Cara Carü" class="logo__img" />
+        <span class="logo__text">Cara Carü<small>Espacio de Relajación</small></span>
       </a>
       <nav class="footer__links" aria-label="Pie de página">
         <a href="#nosotros">Nosotros</a>

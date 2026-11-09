@@ -170,12 +170,12 @@ form.addEventListener("submit", (e) => {
 
   const noches = Math.round((new Date(salida.value) - new Date(llegada.value)) / 86400000);
   const msg = [
-    `¡Hola! Soy ${form.nombre.value.trim()} y quiero consultar disponibilidad en Cabañas Cara Carü 🌿`,
+    `¡Hola! Soy ${form.nombre.value.trim()} y quiero consultar en Cabañas Cara Carü 🌿`,
     ``,
-    `📅 Llegada: ${fmt(llegada.value)}`,
-    `📅 Salida: ${fmt(salida.value)} (${noches} noche${noches > 1 ? "s" : ""})`,
-    `👥 Adultos: ${form.adultos.value} · Niños: ${form.ninos.value}`,
-    form.mensaje.value.trim() ? `💬 ${form.mensaje.value.trim()}` : "",
+    `📌 Motivo: ${form.tipo.value}`,
+    `📅 Fechas: ${fmt(llegada.value)} al ${fmt(salida.value)} (${noches} noche${noches > 1 ? "s" : ""})`,
+    `👥 Asistentes: ${form.adultos.value} adultos · ${form.ninos.value} niños`,
+    form.mensaje.value.trim() ? `💬 Detalle: ${form.mensaje.value.trim()}` : "",
   ].filter((linea, i) => i === 1 || linea).join("\n");
 
   window.open(waLink(msg), "_blank", "noopener");

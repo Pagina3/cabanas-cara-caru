@@ -291,6 +291,104 @@ svg { fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round
 .lightbox__nav--next { right: 1rem; top: 50%; transform: translateY(-50%); }
 @keyframes fade { from { opacity: 0; } }
 
+/* =========================================================
+   Sección Video Promocional
+   ========================================================= */
+.section--dark {
+  background: linear-gradient(180deg, #14281f 0%, #1f3a2e 100%);
+  color: #f1f5f3;
+}
+.section--dark h2 {
+  color: #ffffff;
+}
+.section--dark .section__head p:last-child {
+  color: #c4d7cd;
+}
+
+.promo-video__wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.promo-video__player-box {
+  position: relative;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(255, 255, 255, 0.12);
+  background: #000;
+  aspect-ratio: 16 / 9;
+}
+
+.promo-video__player {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.promo-video__features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 1.2rem;
+  margin-top: 2.2rem;
+}
+
+.promo-feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1.1rem 1.25rem;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(8px);
+}
+
+.promo-feature__num {
+  font-family: var(--serif);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--teal);
+  line-height: 1;
+}
+
+.promo-feature strong {
+  display: block;
+  font-size: 0.98rem;
+  color: #fff;
+  margin-bottom: 0.2rem;
+}
+
+.promo-feature span {
+  display: block;
+  font-size: 0.85rem;
+  color: #9cb3a8;
+  line-height: 1.4;
+}
+
+.promo-video__cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  margin-top: 2.4rem;
+  flex-wrap: wrap;
+}
+
+.btn--whatsapp {
+  background: #25d366;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  box-shadow: 0 8px 24px -8px rgba(37, 211, 102, 0.6);
+}
+.btn--whatsapp:hover {
+  background: #1eb956;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
 /* ---------- Reveal on scroll ---------- */
 .reveal { opacity: 0; transform: translateY(36px); transition: opacity .9s var(--ease), transform .9s var(--ease); }
 .reveal.is-visible { opacity: 1; transform: none; }
@@ -378,6 +476,9 @@ svg { fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round
   .g figcaption { opacity: 1; transform: none; font-size: .8rem; padding: 1.6rem .7rem .6rem; }
   .footer__inner { justify-content: center; text-align: center; }
   .footer__links { justify-content: center; }
+  .promo-video__features { grid-template-columns: 1fr; gap: .8rem; }
+  .promo-video__cta { flex-direction: column; width: 100%; }
+  .promo-video__cta .btn { width: 100%; justify-content: center; }
 }
 
 @media (prefers-reduced-motion: reduce) {

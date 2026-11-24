@@ -26,6 +26,7 @@
         <span class="logo__text">Cara Carü<small>Espacio de Relajación</small></span>
       </a>
       <nav class="nav__links" id="navLinks" aria-label="Principal">
+        <a href="#video">Cómo Funciona</a>
         <a href="#nosotros">Nosotros</a>
         <a href="#cabanas">Cabañas</a>
         <a href="#servicios">Servicios</a>
@@ -55,7 +56,7 @@
       <p class="hero__lead">Cabañas acogedoras, piscina, tinajas calientes y jardines llenos de vida. Un lugar pensado para descansar en familia, en pareja o con amigos.</p>
       <div class="hero__actions">
         <a href="#reservar" class="btn btn--accent">Consultar disponibilidad</a>
-        <a href="#galeria" class="btn btn--ghost">Ver fotos</a>
+        <a href="#video" class="btn btn--ghost">▶ Ver video</a>
       </div>
     </div>
     <div class="hero__dots" id="heroDots" role="tablist" aria-label="Fotos destacadas"></div>
@@ -114,6 +115,71 @@
           <li>Estacionamiento dentro del recinto</li>
         </ul>
         <a href="#reservar" class="btn btn--primary">Quiero reservar</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ VIDEO PROMOCIONAL / CÓMO FUNCIONA ============ -->
+  <section class="section section--dark promo-video" id="video">
+    <div class="container">
+      <div class="section__head section__head--center reveal">
+        <p class="eyebrow eyebrow--accent">Video Publicitario · Experiencia Cara Carü</p>
+        <h2>¿Cómo funciona Cara Carü?</h2>
+        <p>Conoce en menos de 30 segundos todo lo que te espera: cabañas equipadas, tinajas de madera, piscina, spa para niñas, eventos privados y la libertad de descansar sin horarios rígidos.</p>
+      </div>
+
+      <div class="promo-video__wrapper reveal">
+        <div class="promo-video__player-box">
+          <video 
+            id="caraCaruVideo" 
+            class="promo-video__player" 
+            controls 
+            playsinline 
+            preload="metadata"
+            poster="video/promo-poster.jpg">
+            <source src="video/cara-caru-promo.mp4" type="video/mp4" />
+            Tu navegador no soporta la reproducción de video HTML5.
+          </video>
+        </div>
+
+        <div class="promo-video__features">
+          <div class="promo-feature">
+            <span class="promo-feature__num">01</span>
+            <div>
+              <strong>Cabañas Privadas</strong>
+              <span>Equipadas y rodeadas de jardines verdes</span>
+            </div>
+          </div>
+          <div class="promo-feature">
+            <span class="promo-feature__num">02</span>
+            <div>
+              <strong>Tinaja & Pérgola</strong>
+              <span>Agua caliente bajo el cielo estrellado</span>
+            </div>
+          </div>
+          <div class="promo-feature">
+            <span class="promo-feature__num">03</span>
+            <div>
+              <strong>Piscina & Spa Niñas</strong>
+              <span>Tardes mágicas y diversión familiar</span>
+            </div>
+          </div>
+          <div class="promo-feature">
+            <span class="promo-feature__num">04</span>
+            <div>
+              <strong>Sin Horarios Rígidos</strong>
+              <span>Entrada y salida con total flexibilidad</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="promo-video__cta">
+          <a href="#reservar" class="btn btn--accent">Reservar mi estadía ahora</a>
+          <a href="https://wa.me/56993262121?text=Hola!%20Vi%20el%20video%20en%20la%20p%C3%A1gina%20y%20quiero%20consultar%20disponibilidad" target="_blank" rel="noopener noreferrer" class="btn btn--whatsapp">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+            Consultar por WhatsApp
+          </a>
+        </div>
       </div>
     </div>
   </section>
